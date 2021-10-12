@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main container */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Header style */
+.list-header{
+    padding: 20px 0;
+}
+.list-header h2{
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    color:brown;
+}
+.add-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-items #button{
+    background: brown;
+    color: #ffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.add-items #button:hover{
+    background: rgb(121, 10, 10);
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    min-width: 100%;
+}
+.input-field label {
+    font-size: 16px;
+    color: #602c00;
+}
+.input-field input {
+    color: #602c00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: #D6DADD;
+    border-style: dashed;
+    min-width: 350px;
+}
+p.error {
+    font-size: 12px;
+    color: red;
+    padding-bottom: 12px;
+    margin-top: -10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+p.show{
+    margin-top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+/* Showing User */
+.list-table{
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 350px;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #D6DADD;
+    border-style: dotted;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: left;
+}
+th {
+    background-color: #D6DADD;
+}
